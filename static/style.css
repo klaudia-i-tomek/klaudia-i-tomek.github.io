@@ -1,32 +1,21 @@
 body {
-    background: #ffffd6;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .header {
-    margin-top: 60px;
     margin-bottom: 70px;
     margin-left: auto;
     margin-right: auto;
-    width: 532px;
-    height: 250px;
 }
 
 .header img {
-    width: 532px;
-    height: 250px;
 }
 
 div.wrapper {
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 680px;
-    margin-left: auto;
-    margin-right: auto;
-    background: url(dotted-background.png);
-    background-repeat: repeat;
 }
 
 section {
@@ -34,9 +23,7 @@ section {
     border-image: url('border.png');
     border-image-slice: 31 31 31 31;
     border-image-width: 1 1 1 1;
-    border-image-outset: 25px;
     border-image-repeat: round;
-    margin: 100px;
     background: #ffffd6;
 }
 
@@ -78,4 +65,57 @@ a:hover {
 a:active {
     color: #343434;
     text-decoration: underline;
+}
+
+@media all and (max-width: 699px) {
+    div.wrapper {
+        width: 100%;
+        background: none;
+    }
+    body {
+        background: url(dotted-background.png);
+        background-repeat: repeat;
+    }
+    .header img {
+        width: 100%;
+    }
+    section {
+        margin: 60px 25px;
+        border-image-outset: 20px;
+    }
+    p {
+        margin-right: -30px;
+        margin-left: -30px;
+    }
+    iframe, object, embed {
+        max-width: 100%;
+    }
+}
+
+@media all and (min-width: 700px) {
+    div.wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        background: url(dotted-background.png);
+        background-repeat: repeat;
+        width: 680px;
+    }
+    .header {
+        margin-top: 60px;
+        width: 532px;
+    }
+    .header img {
+        width: 532px;
+    }
+    body {
+        background: #ffffd6;
+    }
+    section {
+        margin: 100px;
+        border-image-outset: 25px;
+    }
+    .map {
+        width: 418px;
+        height:350px;
+    }
 }
