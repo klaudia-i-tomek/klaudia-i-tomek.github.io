@@ -20,7 +20,7 @@ div.wrapper {
 
 section {
     border: 31px solid transparent;
-    border-image: url('border.png');
+    border-image-source: url('border.png');
     border-image-slice: 31 31 31 31;
     border-image-width: 1 1 1 1;
     border-image-repeat: round;
